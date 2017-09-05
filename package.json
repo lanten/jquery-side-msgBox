@@ -1,0 +1,17 @@
+{
+  "name": "side-msg-box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "sass": "node-sass sass/ -o dist/ --watch"
+  },
+  "author": "lanten",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>side-massage-box</title>
+	<link rel="stylesheet" type="text/css" href="./dist/style.css" />
+	<link rel="stylesheet" type="text/css" href="./lib/FontAwesome/css/font-awesome.min.css" />
+</head>
+
+<body>
+	<button onclick="openMsg()">open</button>
+	<button onclick="closeMsg()">close</button>
+</body>
+
+</html>
+<script src="./lib/jquery.min.js"></script>
+<script src="./dist/msg.js"></script>
+<script>
+	var cs = ['blue', 'green', 'yellow', 'red', 'purple', 'default'];
+
+	function openMsg() {
+		var c = cs[Math.floor((Math.random() * cs.length))]
+		window.id = $.msg({
+			text: 'test <a href="javascript:alert(\'ok\')">click</a>', // 主内容，可以是任意html元素，可以写入按钮
+			title: c, // 默认 ： '消息'
+			time: 3000, // 自动消失时间 值=0表示永不自动消失 默认3000
+			color: c, // 颜色类型 ： 'blue' 'green' 'yellow' 'red' 'purple'
+			top: '15px', // 默认15
+			icon: 'warning' // 图标，需要引用
+			// onClose:function () {} // 关闭回掉，无参数
+		}) // return: 弹窗ID
+
+		console.log(id)
+	}
+
+	function closeMsg() {
+		console.log($('#' + id))
+		$('#' + id).closeMsg(); //关闭指定id的消息框
+	}
+</script>

@@ -1,0 +1,70 @@
+.side-massage-box-style {
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  padding: 15px;
+  right: 0;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .side-massage-box-style .msg-box {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-top: 15px;
+    width: 320px;
+    position: relative;
+    right: -335px;
+    opacity: 0;
+    color: #555;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); }
+    .side-massage-box-style .msg-box:first-child {
+      margin-top: 0; }
+    .side-massage-box-style .msg-box.hold {
+      right: 0; }
+    .side-massage-box-style .msg-box.active {
+      right: 0;
+      opacity: 1; }
+    .side-massage-box-style .msg-box .fa {
+      margin-right: 8px; }
+    .side-massage-box-style .msg-box .close {
+      position: absolute;
+      right: 8px;
+      top: 2px;
+      cursor: pointer;
+      padding: 4px;
+      font-size: 18px;
+      font-weight: 900; }
+    .side-massage-box-style .msg-box .title {
+      margin: 0 0 10px 0;
+      color: #333; }
+    .side-massage-box-style .msg-box.msg-box-blue {
+      background-color: rgba(57, 167, 219, 0.15);
+      border-color: rgba(57, 167, 219, 0.45);
+      color: rgba(57, 167, 219, 0.75); }
+      .side-massage-box-style .msg-box.msg-box-blue .close, .side-massage-box-style .msg-box.msg-box-blue .title {
+        color: #39a7db; }
+    .side-massage-box-style .msg-box.msg-box-green {
+      background-color: rgba(67, 192, 177, 0.15);
+      border-color: rgba(67, 192, 177, 0.45);
+      color: rgba(67, 192, 177, 0.75); }
+      .side-massage-box-style .msg-box.msg-box-green .close, .side-massage-box-style .msg-box.msg-box-green .title {
+        color: #43c0b1; }
+    .side-massage-box-style .msg-box.msg-box-yellow {
+      background-color: rgba(242, 177, 56, 0.15);
+      border-color: rgba(242, 177, 56, 0.45);
+      color: rgba(242, 177, 56, 0.75); }
+      .side-massage-box-style .msg-box.msg-box-yellow .close, .side-massage-box-style .msg-box.msg-box-yellow .title {
+        color: #f2b138; }
+    .side-massage-box-style .msg-box.msg-box-red {
+      background-color: rgba(224, 123, 123, 0.15);
+      border-color: rgba(224, 123, 123, 0.45);
+      color: rgba(224, 123, 123, 0.75); }
+      .side-massage-box-style .msg-box.msg-box-red .close, .side-massage-box-style .msg-box.msg-box-red .title {
+        color: #E07B7B; }
+    .side-massage-box-style .msg-box.msg-box-purple {
+      background-color: rgba(112, 120, 181, 0.15);
+      border-color: rgba(112, 120, 181, 0.45);
+      color: rgba(112, 120, 181, 0.75); }
+      .side-massage-box-style .msg-box.msg-box-purple .close, .side-massage-box-style .msg-box.msg-box-purple .title {
+        color: #7078b5; }
